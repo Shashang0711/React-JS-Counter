@@ -1,13 +1,122 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    padding: 0px
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    background-color: rgba(163, 227, 238, 0.926);
 }
+
+input[type="text"],
+input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgb(124 108 254);
+    border: 1px solid rgb(124 108 254);
+    color: rgba(255, 255, 255, 0.914);
+    padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+    background: #6cf0c2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    background-color: rgb(226 227 219);
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+    display: flex;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+
+/* .counter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    font-size: 50px;
+}
+
+.counter h1 {
+    color: rgb(151, 235, 151);
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.counter_output {
+    font-size: 40px;
+    color: black;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.button {
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.Reset {
+    width: 100px;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: rgb(16, 0, 54);
+    border: 1px solid rgb(16, 0, 54);
+    cursor: pointer;
+    transition: 0.2s;
+} */
