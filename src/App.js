@@ -66,84 +66,84 @@
 
 
 
-// import React, { useState } from "react";
-// import ReactDOM from "react-dom";
-// import "./index";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import "./index";
 
-// function App() {
+function App() {
 
-//   const [errorMessage, setErrorMessage] = useState({});
-//   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-//   const data = [
-//     {
-//       Username: "Shashang",
-//       Password: "Tandel"
-//     },
-//     {
-//       Username: "Shubham",
-//       Password: "Damania"
-//     }
-//   ];
+  const data = [
+    {
+      Username: "Shashang",
+      Password: "Tandel"
+    },
+    {
+      Username: "Shubham",
+      Password: "Damania"
+    }
+  ];
 
-//   const error = {
-//     uname: "Invalid Username",
-//     pass: "Invalid Password"
-//   };
+  const error = {
+    uname: "Invalid Username",
+    pass: "Invalid Password"
+  };
 
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-//     var { uname, pass } = document.forms[0];
-//     const userData = data.find((user) => user.Username === uname.value);
+    var { uname, pass } = document.forms[0];
+    const userData = data.find((user) => user.Username === uname.value);
 
-//     if (userData) {
-//       if (userData.Password !== pass.value) {
-//         setErrorMessage({ name: "pass", message: error.pass });
-//       } else {
-//         setIsSubmitted(true);
-//       }
-//     } else {
-//       setErrorMessage({ name: "uname", message: error.uname });
-//     }
-//   }
+    if (userData) {
+      if (userData.Password !== pass.value) {
+        setErrorMessage({ name: "pass", message: error.pass });
+      } else {
+        setIsSubmitted(true);
+      }
+    } else {
+      setErrorMessage({ name: "uname", message: error.uname });
+    }
+  }
 
-//   const renderErrorMessage = (name) =>
-//     name === errorMessage?.name && (
-//       <div className="error">{errorMessage.message}</div>
-//     );
+  const renderErrorMessage = (name) =>
+    name === errorMessage?.name && (
+      <div className="error">{errorMessage.message}</div>
+    );
 
-//   const renderForm = (
-//     <div className="form">
-//       <form onSubmit={handleSubmit}>
-//         <div className="input-container">
-//           <label>Username</label>
-//           <input type="text" name="uname" autoComplete="off" required></input>
-//           {renderErrorMessage("uname")}
-//         </div>
-//         <div className="input-container">
-//           <label>Password</label>
-//           <input type="password" name="pass" autoComplete="off" required></input>
-//           {renderErrorMessage("pass")}
-//         </div>
-//         <div className="button-container">
-//           <input type="submit" ></input>
-//         </div>
-//       </form >
-//     </div >
-//   );
+  const renderForm = (
+    <div className="form">
+      <form onSubmit={handleSubmit}>
+        <div className="input-container">
+          <label>Username</label>
+          <input type="text" name="uname" autoComplete="off" required></input>
+          {renderErrorMessage("uname")}
+        </div>
+        <div className="input-container">
+          <label>Password</label>
+          <input type="password" name="pass" autoComplete="off" required></input>
+          {renderErrorMessage("pass")}
+        </div>
+        <div className="button-container">
+          <input type="submit" ></input>
+        </div>
+      </form >
+    </div >
+  );
 
-//   return (
-//     <div className="app" >
-//       <div className="login-form">
-//         <div className="title">Sign in</div>
-//         {isSubmitted ? <div>Successfully login </div> : renderForm}
-//       </div>
+  return (
+    <div className="app" >
+      <div className="login-form">
+        <div className="title">Sign in</div>
+        {isSubmitted ? <div>Successfully login </div> : renderForm}
+      </div>
 
-//     </div >
-//   );
-// }
-// export default App;
+    </div >
+  );
+}
+export default App;
 
 // import React, { useState } from "react";
 // import Student from "./Student";
